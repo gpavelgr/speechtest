@@ -3,7 +3,7 @@ Feature: Task List
 
   Scenario: Adding task to the tasklist
     Given tasklist exists
-     When user says "Add task to tasklist"
+     When user says "Add task do homework"
       And assistant processes input
      Then task is added
       And assistant replies "Task Added"

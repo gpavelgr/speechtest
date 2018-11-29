@@ -11,7 +11,7 @@ def given_assistant_listening(context):
     context.recognizer = sr.Recognizer()
 
 
-@when('user says "{command}"')
+@when('user says word {command}')
 def when_user_says(context, command):
     audio_file = get_file(command)
     context.audio_file = audio_file
@@ -27,14 +27,13 @@ def when_assistant_recognizes_command(context):
 
 
 
-
 @when('assistant fails to recognize command')
 def when_assistant_fails(context):
 
     context.response = ""
 
 
-@then('assistant replies "{answer}"')
+@then('assistant says {answer}')
 def then_assistant_replies(context, answer):
     if context.recognized_command == "hello":
         response = "Hello"

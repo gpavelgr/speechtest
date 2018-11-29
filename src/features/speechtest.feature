@@ -3,7 +3,7 @@ Feature: Speech test
 
   Scenario: Saying hello
     Given The assistant is listening
-     When user says "Hello"
+     When user says word Hello
       And assistant recognizes command
-     Then assistant replies "Hello"
+     Then assistant says Hello
 
