@@ -5,5 +5,5 @@ Feature: Speech test
     Given The assistant is listening
      When user says word Hello
       And assistant recognizes command
-     Then assistant says Hello
+     Then assistant pronounces Hello
 
