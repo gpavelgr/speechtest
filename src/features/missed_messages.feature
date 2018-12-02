@@ -15,9 +15,9 @@ Feature: Missed Messages Notification
       And assistant is working
      Then assistant does not say a thing
 
-  Scenario: Notification of missed messages
-    Given there are missed messages
-     When user has not come home
+  Scenario: No missed messages
+    Given there are no missed messages
+     When user has come home
       And it is evening
       And assistant is working
      Then assistant does not say a thing
