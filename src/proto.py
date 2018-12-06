@@ -2,7 +2,7 @@
 from modules.vabase import VoiceAssistantBase
 
 
-class TasklistAssistant(VoiceAssistantBase):
+class TaskListAssistant(VoiceAssistantBase):
 
     def __init__(self):
         self.tasklist = []
